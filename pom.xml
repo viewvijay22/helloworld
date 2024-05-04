@@ -4,16 +4,46 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.coveros.demo</groupId>
+  <groupId>com.amazon</groupId>
   <artifactId>helloworld</artifactId>
-  <version>1.1</version>
+  <version>1.5</version>
   <packaging>jar</packaging>
 
   <name>Hello World</name>
   <description>The most basic of Java programs.</description>
   <url>https://www.coveros.com/</url>
   <inceptionYear>2018</inceptionYear>
-
+  <!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+<dependencies>
+<dependency>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>3.2</version>
+</dependency>
+</dependencies>
+<distributionManagement>
+   <repository>
+      <id>nexus</id>
+      <url>http://100.25.133.213:8081/repository/maven-release/</url>
+   </repository>
+   <snapshotRepository>
+      <id>nexus</id>
+      <url>http://100.25.133.213:8081/repository/maven-snapshot/</url>
+   </snapshotRepository>
+</distributionManagement>
+<profiles>
+<profile>
+<id>sonar</id>
+<activation>
+<activeByDefault>true</activeByDefault>
+</activation>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>http://54.82.198.47:9000</sonar.host.url>
+<sonar.login>6ae45aaa524e62274fa9b2ddad1050df04b81ede</sonar.login>  
+</properties>
+</profile>
+</profiles>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
