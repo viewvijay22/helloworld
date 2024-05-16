@@ -24,11 +24,11 @@
 <distributionManagement>
    <repository>
       <id>nexus</id>
-      <url>http://100.25.24.113:8081/repository/maven-release/</url>
+      <url>http://54.210.173.120:8081/repository/maven-release/</url>
    </repository>
    <snapshotRepository>
       <id>nexus</id>
-      <url>http://100.25.24.113:8081/repository/maven-snapshot/</url>
+      <url>http://54.210.173.120:8081/repository/maven-snapshot/</url>
    </snapshotRepository>
 </distributionManagement>
 <profiles>
@@ -39,7 +39,7 @@
 </activation>
 <properties>
 <!-- Optional URL to server. Default value is http://localhost:9000 -->
-<sonar.host.url>http://52.3.250.250:9090</sonar.host.url>
+<sonar.host.url>http://100.25.220.54:9090</sonar.host.url>
 <sonar.login>6ae45aaa524e62274fa9b2ddad1050df04b81ede</sonar.login>  
 </properties>
 </profile>
