@@ -1,3 +1,4 @@
+@library(statusprint)_
 node {
        def mavenHome = tool name: 'maven3.96'
        stage ( 'gitcheckoutcode' )
