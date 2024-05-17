@@ -1,4 +1,4 @@
-@library("shared-library-concept") _
+@Library("shared-library-concept") _
 node {
        def mavenHome = tool name: 'maven3.96'
        stage ( 'gitcheckoutcode' )
