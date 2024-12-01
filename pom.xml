@@ -21,16 +21,16 @@
 <version>3.2</version>
 </dependency>
 </dependencies>
-#<distributionManagement>
-#   <repository>
-#      <id>nexus</id>
-#      <url>http://54.210.173.120:8081/repository/maven-release/</url>
-#   </repository>
-#   <snapshotRepository>
-#     <id>nexus</id>
-#      <url>http://54.210.173.120:8081/repository/maven-snapshot/</url>
-#   </snapshotRepository>
-#</distributionManagement>
+<distributionManagement>
+   <repository>
+      <id>nexus</id>
+      <url>http://54.210.173.120:8081/repository/maven-release/</url>
+   </repository>
+   <snapshotRepository>
+      <id>nexus</id>
+      <url>http://54.210.173.120:8081/repository/maven-snapshot/</url>
+   </snapshotRepository>
+</distributionManagement>
 <profiles>
 <profile>
 <id>sonar</id>
@@ -39,8 +39,8 @@
 </activation>
 <properties>
 <!-- Optional URL to server. Default value is http://localhost:9000 -->
-<sonar.host.url>http://100.25.220.54:9090</sonar.host.url>
-<sonar.login>6ae45aaa524e62274fa9b2ddad1050df04b81ede</sonar.login>  
+<sonar.host.url>http://3.84.236.10:9090</sonar.host.url>
+<sonar.login>d2ff962be5551a0c56763d4f8728ea11e2a58d3d</sonar.login>  
 </properties>
 </profile>
 </profiles>
