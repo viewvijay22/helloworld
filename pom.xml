@@ -13,37 +13,7 @@
   <description>The most basic of Java programssss.</description>
   <url>https://www.coveros.com/</url>
   <inceptionYear>2018</inceptionYear>
-  <!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
-<dependencies>
-<dependency>
-<groupId>org.sonarsource.scanner.maven</groupId>
-<artifactId>sonar-maven-plugin</artifactId>
-<version>3.2</version>
-</dependency>
-</dependencies>
-<distributionManagement>
-   <repository>
-      <id>nexus</id>
-      <url>http://54.210.173.120:8081/repository/maven-release/</url>
-   </repository>
-   <snapshotRepository>
-      <id>nexus</id>
-      <url>http://54.210.173.120:8081/repository/maven-snapshot/</url>
-   </snapshotRepository>
-</distributionManagement>
-<profiles>
-<profile>
-<id>sonar</id>
-<activation>
-<activeByDefault>true</activeByDefault>
-</activation>
-<properties>
-<!-- Optional URL to server. Default value is http://localhost:9000 -->
-<sonar.host.url>http://3.84.236.10:9090</sonar.host.url>
-<sonar.login>d2ff962be5551a0c56763d4f8728ea11e2a58d3d</sonar.login>  
-</properties>
-</profile>
-</profiles>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
