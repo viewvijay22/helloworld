@@ -37,11 +37,11 @@
 <activation>
 <activeByDefault>true</activeByDefault>
 </activation>
-<properties>
-<!-- Optional URL to server. Default value is http://localhost:9000 -->
+#<properties>
+#<!-- Optional URL to server. Default value is http://localhost:9000 -->
 #<sonar.host.url>http://51.20.141.131:9000</sonar.host.url>
 #<sonar.login>4af905ec5e844391771b7a64aad87638cd1d09e5</sonar.login>  
-</properties>
+#</properties>
 </profile>
 </profiles>
   <properties>
