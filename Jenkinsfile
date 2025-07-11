@@ -1,7 +1,7 @@
 node {
     def mavenHome = tool name: 'maven'
     stage('checkout') {
-        // Checkout source code from SCM (Git)
+        // Checkout raw code from SCM (Git)
         git credentialsId: 'git', url: 'https://github.com/viewvijay22/helloworld.git'
     }
     stage('Build') {
